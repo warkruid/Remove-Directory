@@ -1,0 +1,31 @@
+TOPIC
+        about_Clean-Directory
+        
+SHORT DESCRIPTION
+        
+LONG DESCRIPTION
+
+EXAMPLES
+
+KEYWORDS
+     Administration Jobs Automation Maintenance
+     
+SEE ALSO
+
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
+
+
+/* Calls the Get-Process PowerShell command and returns the output as a string */
+
+foreach (string str in PowerShell.Create().
+    AddScript("Get-Process").
+    AddCommand("Out-String").Invoke<string>())
+
+{
+
+    Console.WriteLine(str);
+
+}
+
+
