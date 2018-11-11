@@ -1,5 +1,5 @@
 TOPIC
-        about_Clean-Directory
+        about_Remove-Directory
         
 SHORT DESCRIPTION
         
